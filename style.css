@@ -1,0 +1,8 @@
+body {
+  background-color: #2e2e2e;
+}
+
+header {
+  @apply max-h-40 h-40;
+  background-color: #151419;
+}

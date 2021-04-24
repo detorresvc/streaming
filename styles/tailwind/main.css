@@ -1,0 +1,110 @@
+body {
+  @apply bg-no-repeat bg-right-bottom bg-fixed bg-contain;
+  background-color: #2e2e2e;
+  background-image: url('../../assets/Rectangle_394@2x.png');
+}
+
+header {
+  @apply max-h-24 h-24 flex flex-col items-center space-x-5 px-5 shadow-lg;
+  background-color: #151419;
+}
+
+@screen lg {
+  header {
+    @apply flex-row;
+  }
+}
+
+
+footer {
+  @apply max-h-24 h-24 flex space-x-5 px-5 py-3 shadow-lg;
+  background-color: #151419;
+}
+
+
+.logo {
+  @apply bg-contain bg-no-repeat bg-center w-60 h-full ml-0;
+  background-image: url('../../assets/SkippyTVWeblogo@2x.png');
+}
+
+
+@screen lg {
+  .logo {
+    @apply ml-5;
+  }
+}
+
+.menu {
+  @apply flex-1 flex items-center justify-end hidden;
+}
+
+ul.navigation {
+  @apply flex space-x-5;
+}
+
+ul.navigation > li {
+  @apply text-white text-lg font-bold; 
+}
+
+
+ul.navigation > li > a.active {
+  @apply text-red-500;
+}
+
+.search {
+  @apply w-auto relative hidden; 
+}
+
+.search > input {
+  @apply w-60 h-10 rounded-full px-3 border-gray-400 border text-white outline-none ;
+  
+  background: #151419;
+}
+
+.content-container {
+  @apply flex flex-col w-full;
+  height: 100%;
+}
+
+@screen lg {
+  .content-container {
+    @apply flex-row;
+  }
+}
+
+.video-container {
+  @apply w-full h-full pt-5;
+}
+
+@screen lg {
+  .video-container {
+    @apply p-10 w-8/12;
+  }
+}
+
+.video-content {
+  @apply w-full;
+  height: 700px;
+  max-height: 400px;
+}
+
+@screen lg {
+  .video-content {
+    max-height: 700px;
+  }
+}
+
+.chat-container {
+  @apply w-full py-10 flex-1;
+}
+
+@screen lg {
+  .chat-container {
+    @apply w-4/12 pr-10;
+  }
+}
+
+.chat {
+  @apply w-full;
+  height: 700px;
+}
